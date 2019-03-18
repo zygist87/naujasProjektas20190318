@@ -1,0 +1,27 @@
+{
+  "name": "naujasprojektas20190318",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zygist87/naujasProjektas20190318.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zygist87/naujasProjektas20190318/issues"
+  },
+  "homepage": "https://github.com/zygist87/naujasProjektas20190318#readme",
+  "devDependencies": {
+    "chart.js": "^2.7.3",
+    "grunt": "^1.0.3",
+    "grunt-assemble": "^0.6.3",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-svg-sprite": "^1.5.0"
+  },
+}
