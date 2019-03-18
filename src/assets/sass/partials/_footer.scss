@@ -1,0 +1,9 @@
+.footerr{
+    position: fixed;
+    top: 1000px;
+    left: $nav-left-width;
+    width: 100%;
+    height: 50px;
+    background-color: $default-footer-bg;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+stats:
+  visits: Lankytojai šiandien
+  revenue: Bendrai
+  sales: Šiandienos pardavimai
+  conversion: Konversija
+  year: Metinė pardavimų ataskaita
+  total: Bendros pajamos
+  totalr: Bendros pajamos, skritulinė diagrama
+  latest: Naujausi projektai
+  your: Vieta Jūsų nepakartojamam tekstui.
+  projectName: Projekto pavadinimas
+  startDate: Projekto pradžia
+  dueDate: Projekto pabaiga
+  status: Būsena
+  assign: Vykdytojas
+  admin: Administratorius
+  user: Vartotojas
+  master: Savininkas
+  main: Pagrindinis
+  dashboard: Skydelis

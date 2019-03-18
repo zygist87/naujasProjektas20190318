@@ -1,0 +1,110 @@
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    .nav-bar{
+        position: relative;
+        height: $nav-height;
+        background: $default-bg;
+        &--left{
+            float: left;
+            width: $nav-left-width;
+            text-align: center;
+
+        }
+        &--right{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+             -ms-flex-pack: justify;
+                justify-content: space-between;
+            //margin-left: $nav-left-width;
+            min-height: $nav-height;
+            width: calc(100%-240px);
+
+        }
+
+        &__lists{
+            line-height: $nav-height;
+
+            &--left{
+
+            }
+            &--right{
+                float: right;
+                width: 220px;
+                display: flex;
+                justify-content: space-around;
+            }
+            &__link{
+                display: inline-block;
+                text-align: center;
+                height: 100px;
+            }
+            &--svg-icon{
+                width: 24px;
+                height: 24px;
+                fill: lime;
+                margin-right: 10px;
+            }
+            &--svg-iconf{
+                width: 24px;
+                height: 24px;
+                fill: black;
+                background-color: white;
+                margin-left: -6px;
+                margin-top: -3px;
+            }
+            &--search{
+                height: 24px;
+                width: 150px;
+            }
+        }
+        .dropdown-menu{
+            &__item{
+                display: flex;
+                padding: 10px 20px;
+                align-items: center;
+                .circle{
+                    @include circle($width: 40px, $height: 40px)
+                }
+                &__title{
+                    margin-left: 10px;
+                    h5{
+                        color: $text-color;
+                    }
+                    p{
+                        color: $mid-gray;
+
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-vertical--closed{
+        width: 70px;
+
+        .side-menu__lists{
+            &__list{
+                span{
+                    display: none;
+                }
+                &:after{
+                    display: none;
+                }
+            }
+            &__title{
+                display: none;
+            }
+        }
+}
+// searchhh{
+//     &nav-bar__lists nav-bar__lists--svg-icon{
+//         fill: black;
+//         background-color: white;
+//     }
+// }
