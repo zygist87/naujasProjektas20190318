@@ -4,10 +4,10 @@
     left: 0;
     z-index: 999;
     width: 100%;
+    background: $navbar-bg;
     .nav-bar{
         position: relative;
         height: $navbar-height;
-        background: $navbar-bg;
         &--left{
             float: left;
             width: $nav-left-width;
@@ -15,12 +15,13 @@
 
         }
         &--right{
+          float: right;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
              -ms-flex-pack: justify;
-                justify-content: space-between;
+                justify-content: right;
             //margin-left: $nav-left-width;
             min-height: $navbar-height;
             width: calc(100%-240px);
@@ -28,82 +29,72 @@
 
         &__lists{
             line-height: $navbar-height;
+            display: inline-block;
+
 
             &--left{
-
             }
             &--right{
                 float: right;
-                width: 220px;
+                width: calc(100%-240px);
                 display: flex;
-                justify-content: space-around;
+                justify-content: right;
+                display:inline-block;
             }
             &__link{
                 display: inline-block;
                 text-align: center;
-                height: 100px;
             }
             &--svg-icon{
                 width: 24px;
                 height: 24px;
-                fill: lime;
+                fill: blue;
                 margin-right: 10px;
             }
-            &--svg-iconf{
-                width: 24px;
+            &--svg-iconhome{
+                width: 50px;
                 height: 24px;
-                fill: black;
-                background-color: white;
-                margin-left: -6px;
-                margin-top: -3px;
+                color: red;
+                margin-right: 40px;
             }
-            &--search{
+            &--svg-iconn{
+                width: 50px;
                 height: 24px;
+                margin-right: 40px;
+            }
+            &--svg-iconnumber{
+              justify-content: center;
+              text-align: center;
                 width: 150px;
-            }
-        }
-        .dropdown-menu{
-            &__item{
-                display: flex;
-                padding: 10px 20px;
-                align-items: center;
-                .circle{
-                    @include circle($width: 40px, $height: 40px)
+                margin-right: 40px;
+                color: white;
+                background-color: blue;
+                .call-number{
+                  background-color: blue;
+                  height: 50px;
                 }
-                &__title{
-                    margin-left: 10px;
-                    h5{
-                        color: $text-color;
-                    }
-                    p{
-                        color: $mid-gray;
+            }
 
-                    }
-                }
-            }
         }
+        // .dropdown-menu{
+        //     &__item{
+        //         display: flex;
+        //         padding: 10px 20px;
+        //         align-items: center;
+        //         .circle{
+        //             @include circle($width: 40px, $height: 40px)
+        //         }
+        //         &__title{
+        //             margin-left: 10px;
+        //             h5{
+        //                 color: $text-color;
+        //             }
+        //             p{
+        //                 color: $mid-gray;
+        //
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
-.navbar-vertical--closed{
-        width: 70px;
-
-        .side-menu__lists{
-            &__list{
-                span{
-                    display: none;
-                }
-                &:after{
-                    display: none;
-                }
-            }
-            &__title{
-                display: none;
-            }
-        }
-}
-// searchhh{
-//     &nav-bar__lists nav-bar__lists--svg-icon{
-//         fill: black;
-//         background-color: white;
-//     }
-// }

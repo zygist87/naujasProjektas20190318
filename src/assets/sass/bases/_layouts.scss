@@ -1,6 +1,6 @@
 .section-container{
-    margin-top: $nav-height + 20;
-    margin-left: $nav-left-width + 15;
+    margin-top: $navbar-height;
+  //  margin-left: $nav-left-width + 15;
     &--closed{
         margin-left: 90px;
     }
@@ -62,18 +62,18 @@
         color: $color-master;
     }
 }
-.sidenav-closed{
-    .topbar{
-        .nav-bar{
-            &--left{
-                width: $sidenav-closed-width;
-                span{
-                    display: none;
-                }
-            }
-        }
-    }
-    .section-container{
-        margin-left: $sidenav-closed-width + 15;
-    }
-}
+// .sidenav-closed{
+//     .topbar{
+//         .nav-bar{
+//             &--left{
+//                 width: $sidenav-closed-width;
+//                 span{
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+//     .section-container{
+//         margin-left: $sidenav-closed-width + 15;
+//     }
+// }
