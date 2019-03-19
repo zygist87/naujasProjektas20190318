@@ -6,8 +6,8 @@
     width: 100%;
     .nav-bar{
         position: relative;
-        height: $nav-height;
-        background: $default-bg;
+        height: $navbar-height;
+        background: $navbar-bg;
         &--left{
             float: left;
             width: $nav-left-width;
@@ -22,13 +22,12 @@
              -ms-flex-pack: justify;
                 justify-content: space-between;
             //margin-left: $nav-left-width;
-            min-height: $nav-height;
+            min-height: $navbar-height;
             width: calc(100%-240px);
-
         }
 
         &__lists{
-            line-height: $nav-height;
+            line-height: $navbar-height;
 
             &--left{
 
