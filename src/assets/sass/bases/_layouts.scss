@@ -1,35 +1,71 @@
 .section-container{
     margin-top: $navbar-height;
-  //  margin-left: $nav-left-width + 15;
-    &--closed{
-        margin-left: 90px;
+    background: lightblue;
+    // .section-title{
+    //     &__nav{
+    //         span{
+    //             &:first-of-type{
+    //                 &:after{
+    //                     content: '/'
+    //                 }
+    //             }
+    //         }
+    //     }
+    //   }
     }
-    .section-title{
-        &__nav{
-            span{
-                &:first-of-type{
-                    &:after{
-                        content: '/'
-                    }
-                }
-            }
-        }
-    }
-    }
+.row--contactt{
+  height: 750px;
+}
 .boxes{
-    -webkit-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
-    padding: 15px;
     background: #fff;
-    margin-bottom: 15px;
     .circle{
         @include circle();
     }
     &__title{
       }
-      &--right{
+      &--petcaresection{
+          height: 731px;
           text-align: right;
+          background: $navbar-bg;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      &--aboutmesection{
+        height: 580px;
+        text-align: right;
+        background: lime;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &--servicessection{
+        height: 878px;
+        text-align: right;
+        background: white;
+        display: flex;
+        justify-content: center;
+      }
+      &--lovemyclientssection{
+        height: 372px;
+        text-align: right;
+        background: white;
+        display: flex;
+        justify-content: center;
+      }
+      &--whatpetownrssaysection{
+        height: 550px;
+        text-align: right;
+        background: white;
+        display: flex;
+        justify-content: center;
+      }
+      &--contactsection{
+
+        text-align: right;
+        background: white;
+        display: flex;
+        justify-content: center;
       }
       &__image{
           width: 80px;
@@ -37,6 +73,25 @@
           border-radius: 50%;
           object-fit: cover;
           margin-right: 20px;
+          &--petcare{
+            display: flex;
+            width: 479px;
+            height: 478px;
+            border-radius: 50%;
+          }
+          &--aboutme{
+            width: 479px;
+            height: 478px;
+            border-radius: 50%;
+            //object-fit: cover;
+            margin-right: 20px;
+          }
+          &--gromming{
+            display: flex;
+            width: 230px;
+            height: 227px;
+            border-radius: 50%;
+          }
       }
       &--flex{
           display: flex;
@@ -50,18 +105,18 @@
          }
       }
 }
-.user-role{
-    &--user{
-        color: $color-user;
-        font-weight: 600;
-    }
-    &--admin{
-        color: $color-admin;
-    }
-    &--master{
-        color: $color-master;
-    }
-}
+// .user-role{
+//     &--user{
+//         color: $color-user;
+//         font-weight: 600;
+//     }
+//     &--admin{
+//         color: $color-admin;
+//     }
+//     &--master{
+//         color: $color-master;
+//     }
+// }
 // .sidenav-closed{
 //     .topbar{
 //         .nav-bar{
