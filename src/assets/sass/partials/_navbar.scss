@@ -48,7 +48,7 @@
             &--svg-icon{
                 width: 24px;
                 height: 24px;
-                fill: blue;
+                fill: $bg-blue;
                 margin-right: 10px;
             }
             &--svg-iconhome{
@@ -68,9 +68,9 @@
                 width: 150px;
                 margin-right: 40px;
                 color: white;
-                background-color: blue;
+                background-color: $bg-blue;
                 .call-number{
-                  background-color: blue;
+                  background-color: $bg-blue;
                   height: 50px;
                 }
             }
