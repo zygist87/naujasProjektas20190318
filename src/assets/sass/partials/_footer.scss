@@ -1,4 +1,10 @@
 .pabandymui{
+  .contacttitle{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    height: auto;
+  }
   position: relative;
   clear:both;
   background: $bg-blue;
@@ -20,12 +26,16 @@
   }
   .boxes{
         &--contactsection{
+          padding-bottom: 40px;
           text-align: center;
           background: $bg-blue;
           //display: flex;
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center;
+                  &-inputs{
+
+                  }
         }
         &--contactsectionicon{
           text-align: center;
@@ -41,12 +51,7 @@
          background: $bg-blue;
          border: none;
          color: white;
-          // padding: 15px 32px;
-          // text-align: center;
           text-decoration: none;
-          // display: inline-block;
-          // font-size: 16px;
-          // margin: 4px 2px;
           cursor: pointer;
         }
         &__image{
@@ -65,8 +70,4 @@
             }
         }
     }
-}
-.mano{
-    position: relative;
-    clear:both;
 }

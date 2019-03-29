@@ -1,55 +1,137 @@
 .section-container{
     margin-top: $navbar-height;
     background: lightblue;
+    color: $bg-blue;
     }
 .container-fluid{
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 0px;
+  margin-left: 0px;
   h2{
     color: $bg-blue;
     width: 100%;
     height: 73px;
   }
+  .pet-care{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    height: auto;
+    text-align: right;
+    background: $navbar-bg;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+            h1{
+              font-size: 130px;
+              font-weight: bold;
+              text-align: left;
+              padding-left: 160px;
+            }
+            p{
+              font-size: 26px;
+              text-align: left;
+              padding-left: 160px;
+            }
+            a{
+              padding-left: 180px;
+              -webkit-box-align: left;
+                  -ms-flex-align: left;
+                      align-items: left;
+              -webkit-box-pack: left;
+                  -ms-flex-pack: left;
+                      justify-content: left;
+              text-align: left;
+              span{
+                padding: 10px 20px;
+                width: auto;
+                height: 40px;
+                background: $bg-blue;
+                color: white;
+                -webkit-transition: color 0.4s;
+                -webkit-transition: color 0.4s ease 0s;
+                transition: color 0.4s ease 0s;
+              }
+            }
+
+  }
+  .about-me{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    padding-right: 40px;
+    position: relative;
+    height: auto;
+    text-align: right;
+    background: lime;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            h1{
+              padding-bottom: 60px;
+              font-size: 100px;
+              font-weight: bold;
+              text-align: left;
+              padding-left: 120px;
+            }
+            p{
+              padding-bottom: 80px;
+              font-size: 20px;
+              text-align: left;
+              padding-left: 120px;
+            }
+            a{
+              padding-left: 140px;
+              -webkit-box-align: left;
+                  -ms-flex-align: left;
+                      align-items: left;
+              -webkit-box-pack: left;
+                  -ms-flex-pack: left;
+                      justify-content: left;
+              text-align: left;
+              span{
+                padding: 10px 20px;
+                width: auto;
+                height: 40px;
+                background: $bg-blue;
+                color: white;
+                -webkit-transition: color 0.4s;
+                -webkit-transition: color 0.4s ease 0s;
+                transition: color 0.4s ease 0s;
+              }
+            }
+  }
+  h2{
+    padding-top: 20px;
+    color: $bg-blue;
+  }
 }
+
+
+
+
+
 .boxes{
-    background: #fff;
+
     .circle{
         @include circle();
     }
     &__title{
       }
-      &--petcaresection{
-          height: 731px;
-          text-align: right;
-          background: $navbar-bg;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-      }
-      &--aboutmesection{
-        height: 580px;
-        text-align: right;
-        background: lime;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-      }
-      &--servicessection{
+    &--servicessection{
         height: 878px;
         text-align: right;
         background: white;
@@ -60,7 +142,7 @@
             -ms-flex-pack: center;
                 justify-content: center;
       }
-      &--lovemyclientssection{
+    &--lovemyclientssection{
         height: 372px;
         text-align: right;
         background: white;
@@ -71,7 +153,7 @@
             -ms-flex-pack: center;
                 justify-content: center;
       }
-      &--whatpetownrssaysection{
+    &--whatpetownrssaysection{
         height: 550px;
         text-align: right;
         background: white;
@@ -82,7 +164,7 @@
             -ms-flex-pack: center;
                 justify-content: center;
       }
-      &-contactsection{
+    &-contactsection{
 
         text-align: right;
         background: white;
@@ -141,70 +223,4 @@
             }
          }
       }
-}
-.pabandymui{
-  background: $bg-blue;
-  color: white;
-  input, textarea{
-      color: white;
-      background: $bg-blue;
-      border: none;
-      border-bottom: solid 1px;
-      &::-webkit-input-placeholder{
-      color: white;
-    }
-      &::-ms-input-placeholder{
-      color: white;
-    }
-      &::placeholder{
-      color: white;
-    }
-  }
-  .boxes{
-        &--contactsection{
-          text-align: center;
-          background: $bg-blue;
-          //display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-        }
-        &--contactsectionicon{
-          text-align: center;
-          background: red;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-        }
-        .button {
-         background: $bg-blue;
-         border: none;
-         color: white;
-          // padding: 15px 32px;
-          // text-align: center;
-          text-decoration: none;
-          // display: inline-block;
-          // font-size: 16px;
-          // margin: 4px 2px;
-          cursor: pointer;
-        }
-        &__image{
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            -o-object-fit: cover;
-               object-fit: cover;
-            margin-right: 20px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            &--contact{
-              width: 288px;
-              height: 157px;
-            }
-        }
-    }
 }

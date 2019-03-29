@@ -1,10 +1,13 @@
 ---
 custom_basename: footer
 ---
-<div class="container-fluid mano">
+<div class="container-fluid">
     <div class="pabandymui">
-        <h2><span>Contact</span></h2>
-        <div class="row justify-content-md-center row--contactt">
+        <!-- virsutine dalis kur eiluteje is keturiu daliu sudaryta -->
+        <div class="">
+          <h2 class="contacttitle">Contact</h2>
+        </div>
+        <div class="row justify-content-md-center">
           <div class="col-xl-2">
               <div class="boxes boxes--contactsection">
                 <p><span>Phone</span></p><br>
@@ -12,7 +15,7 @@ custom_basename: footer
               </div>
           </div>
           <div class="col-xl-2">
-              <div class="boxes  boxes--contactsection">
+              <div class="boxes boxes--contactsection">
                 <p><span>Email</span></p>
                 <p><span>info@mysite.com</span></p>
               </div>
@@ -32,32 +35,32 @@ custom_basename: footer
               </div>
           </div>
         </div>
+        <!-- cia inputai name email subject message send -->
         <div class="row">
           <div class="col-xl-12">
-              <div class="boxes boxes--contactsection">
+              <div class="boxes boxes--contactsection boxes--contactsection-inputs">
                   <form action="/action_page.php">
-                    <input class="" type="text" name="q" placeholder="Name *">
-                    <input class="" type="text" name="q" placeholder="Email *"><br>
-                    <input class="" type="text" name="q" placeholder="Subject"><br>
-                    <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea><br>
-                    <div class=""><button class="button" type="button" name="button">Send</button></div>
+                      <input class="" type="text" name="q" placeholder="Email *"><br>
+                      <input class="" type="text" name="q" placeholder="Subject"><br>
+                      <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea><br>
+                      <button class="button" type="button" name="button">Send</button>
                   </form>
-                </div>
               </div>
           </div>
-<!-- bandau isspresti nesamone su apacia -->
-          <div class="row">
-                  <div class="col col-xl-7">
-                    <ul class="icon-list">
-                        <li><a href="https://www.facebook.com/"><img class="boxes__image--icons" src="assets/images/facebook.jpg" alt="facebook icon"></a></li>
-                        <li><a href="https://twitter.com/"><img class="boxes__image--icons" src="assets/images/twitter.jpg" alt="twitter icon"></a></li>
-                        <li><a href="https://www.youtube.com/"><img class="boxes__image--icons" src="assets/images/youtube.jpg" alt="youtube icon"></a></li>
-                        <li><a href="https://www.linkedin.com/"><img class="boxes__image--icons" src="assets/images/in.jpg" alt="in icon"></a></li>
-                    </ul>
-                  </div>
-                  <div class="col col-xl-5  v-align">
-                      <img class="boxes__image--contact" src="assets/images/contactsdog.jpg" alt="contacts dog picture">
-                  </div>
+        </div>
+        <!-- ikonos ir suns paveiksliukas -->
+        <div class="row">
+            <div class="col col-xl-7">
+                <ul class="icon-list">
+                    <li><a href="https://www.facebook.com/"><img class="boxes__image--icons" src="assets/images/facebook.jpg" alt="facebook icon"></a></li>
+                    <li><a href="https://twitter.com/"><img class="boxes__image--icons" src="assets/images/twitter.jpg" alt="twitter icon"></a></li>
+                    <li><a href="https://www.youtube.com/"><img class="boxes__image--icons" src="assets/images/youtube.jpg" alt="youtube icon"></a></li>
+                    <li><a href="https://www.linkedin.com/"><img class="boxes__image--icons" src="assets/images/in.jpg" alt="in icon"></a></li>
+                </ul>
             </div>
-      </div>
+            <div class="col col-xl-5 v-align">
+                <img class="boxes__image--contact" src="assets/images/contactsdog.jpg" alt="contacts dog picture">
+            </div>
+        </div>
+    </div>
 </div>
