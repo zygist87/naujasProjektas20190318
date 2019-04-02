@@ -1,4 +1,4 @@
-.pabandymui{
+.contact-section{
   .contacttitle{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -34,7 +34,22 @@
               -ms-flex-pack: center;
                   justify-content: center;
                   &-inputs{
+                    .input-email-subject{
+                      width: 380px;
+                      height: auto;
+                    }
+                    .input-email-subject__email{
+                      margin-right: 10px;
+                    }
+                    .input-email-subject__subject{
+                      margin-left: 10px;
+                    }
+                    .input-message{
+                      width: 780px;
+                      height: auto;
+                      padding-top: 10px;
 
+                    }
                   }
         }
         &--contactsectionicon{
@@ -70,4 +85,23 @@
             }
         }
     }
+    // .icon-list{
+    //   .user-info__bottom{
+    //           margin-top: 40px;
+    //           margin-bottom: 40px;
+    //           .circle{
+    //             @include circle();
+    //             height: 40px;
+    //             width: 40px;
+    //             margin-right: $spacer;
+    //             background: gray;
+    //             .svg-icon{
+    //               background: grey;
+    //               fill: red;
+    //               padding: 6px;
+    //
+    //             }
+    //           }
+    //         }
+    // }
 }

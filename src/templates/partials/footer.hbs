@@ -2,7 +2,7 @@
 custom_basename: footer
 ---
 <div class="container-fluid">
-    <div class="pabandymui">
+    <div class="contact-section">
         <!-- virsutine dalis kur eiluteje is keturiu daliu sudaryta -->
         <div class="">
           <h2 class="contacttitle">Contact</h2>
@@ -10,7 +10,7 @@ custom_basename: footer
         <div class="row justify-content-md-center">
           <div class="col-xl-2">
               <div class="boxes boxes--contactsection">
-                <p><span>Phone</span></p><br>
+                <p><span>Phone</span></p>
                 <p><span>123-456-7890</span></p>
               </div>
           </div>
@@ -40,9 +40,9 @@ custom_basename: footer
           <div class="col-xl-12">
               <div class="boxes boxes--contactsection boxes--contactsection-inputs">
                   <form action="/action_page.php">
-                      <input class="" type="text" name="q" placeholder="Email *"><br>
-                      <input class="" type="text" name="q" placeholder="Subject"><br>
-                      <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea><br>
+                      <input class="input-email-subject input-email-subject__email" type="text" name="q" placeholder="Email *">
+                      <input class="input-email-subject input-email-subject__subject" type="text" name="q" placeholder="Subject"><br>
+                      <textarea class="input-message" name="name" rows="8" cols="80" placeholder="Message"></textarea><br>
                       <button class="button" type="button" name="button">Send</button>
                   </form>
               </div>
@@ -52,10 +52,32 @@ custom_basename: footer
         <div class="row">
             <div class="col col-xl-7">
                 <ul class="icon-list">
-                    <li><a href="https://www.facebook.com/"><img class="boxes__image--icons" src="assets/images/facebook.jpg" alt="facebook icon"></a></li>
+                  <div class="user-info__bottom d-flex justify-content-center mano">
+                                  <div class="circlee">
+                                      <svg class="svg-icon svg-icon--color mano-giliau">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+                                      </svg>
+                                  </div>
+                                  <div class="circlee">
+                                      <svg class="svg-icon svg-icon--color">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+                                      </svg>
+                                  </div>
+                                  <div class="circlee">
+                                      <svg class="svg-icon svg-icon--color">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#youtube"></use>
+                                      </svg>
+                                  </div>
+                                  <div class="circlee">
+                                      <svg class="svg-icon svg-icon--color">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
+                                      </svg>
+                                  </div>
+                              </div>
+                    <!-- <li><a href="https://www.facebook.com/"><img class="boxes__image--icons" src="assets/images/facebook.jpg" alt="facebook icon"></a></li>
                     <li><a href="https://twitter.com/"><img class="boxes__image--icons" src="assets/images/twitter.jpg" alt="twitter icon"></a></li>
                     <li><a href="https://www.youtube.com/"><img class="boxes__image--icons" src="assets/images/youtube.jpg" alt="youtube icon"></a></li>
-                    <li><a href="https://www.linkedin.com/"><img class="boxes__image--icons" src="assets/images/in.jpg" alt="in icon"></a></li>
+                    <li><a href="https://www.linkedin.com/"><img class="boxes__image--icons" src="assets/images/in.jpg" alt="in icon"></a></li> -->
                 </ul>
             </div>
             <div class="col col-xl-5 v-align">

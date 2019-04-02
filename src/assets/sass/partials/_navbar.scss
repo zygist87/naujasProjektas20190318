@@ -37,8 +37,12 @@
             &--right{
                 float: right;
                 width: calc(100%-240px);
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: right;
+                -webkit-box-pack: right;
+                    -ms-flex-pack: right;
+                        justify-content: right;
                 display:inline-block;
             }
             &__link{
@@ -46,6 +50,7 @@
                 text-align: center;
             }
             &--svg-icon{
+              background: $navbar-bg;
                 width: 24px;
                 height: 24px;
                 fill: $bg-blue;
@@ -63,7 +68,9 @@
                 margin-right: 40px;
             }
             &--svg-iconnumber{
-              justify-content: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
               text-align: center;
                 width: 150px;
                 margin-right: 40px;
