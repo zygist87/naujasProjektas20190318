@@ -38,6 +38,20 @@ $(function() {
     $('#basename').text(basename)
     .attr('href', '/' + basename.tolowerCase() + '.html');
 
-    //pats bandau side menu isvaziuojanti is sono
 
 });
+
+// nuo cia mygtukas contacts veikiantis
+$("#mygtukass").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#apaciaaa").offset().top - 100
+  }, 1000);
+});
+// iki cia contacts mygtukas veikiantis su -100 kad teisingai rodytu
+// nuo cia paspaudus call mygtuka ismeta alert
+$(document).ready(function(){
+  $("#callTo").click(function(){
+    alert("Are you sure you want to call?");
+  });
+});
+// cia pabaiga call mygtuko

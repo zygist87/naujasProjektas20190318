@@ -1,0 +1,55 @@
+.services-section{
+      h1{
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .content-with{
+
+          .boxes--servicessection{
+            .grooming{
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              .boxes__image--gromming{
+                width: 193px;
+                height: 193px;
+                border-radius: 50%;
+
+              }
+
+            }
+            .services-info{
+              text-align: center;
+              padding-top: 60px;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              .boxes__title{
+
+              }
+              .price{
+                padding-top: 40px;
+                padding-bottom: 40px;
+              }
+              .boxes__info{
+
+              }
+              .learn-more{
+                border-bottom: 1px solid $bg-blue;
+              }
+              .book-it{
+                margin-top: 40px;
+                margin-bottom: 60px;
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                background: $bg-blue;
+                color: white;
+              }
+            }
+          }
+        }
+}
