@@ -12,7 +12,9 @@
             float: left;
             width: $nav-left-width;
             text-align: center;
-
+            .bla{
+              text-decoration: none;
+            }
         }
         &--right{
           float: right;
@@ -30,9 +32,10 @@
         &__lists{
             line-height: $navbar-height;
             display: inline-block;
-
+            text-decoration: none;
 
             &--left{
+              text-decoration: none;
             }
             &--right{
                 float: right;
@@ -48,6 +51,11 @@
             &__link{
                 display: inline-block;
                 text-align: center;
+                .active{
+                  color: red;
+                }
+
+
             }
             &--svg-icon{
               background: $navbar-bg;
@@ -57,14 +65,9 @@
                 margin-right: 10px;
             }
             &--svg-iconhome{
-                width: 50px;
-                height: 24px;
-                color: red;
                 margin-right: 40px;
             }
             &--svg-iconn{
-                width: 50px;
-                height: 24px;
                 margin-right: 40px;
 
             }
@@ -78,9 +81,15 @@
                 margin-right: 40px;
                 color: white;
                 background-color: $bg-blue;
-                .call-number{
+                .phone-number{
+                  line-height: 50px;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
                   background-color: $bg-blue;
                   height: 50px;
+                  width: 150px;
+                  padding-left: 10px;
                 }
             }
 
@@ -107,3 +116,14 @@
         // }
     }
 }
+// .nav{
+//     .nav-item{
+//       .nav-link{
+//         &.active{
+//           color: green;
+//           border-bottom: 2px solid red;
+//           height: $navbar-height;
+//         }
+//       }
+//     }
+// }
