@@ -68,6 +68,8 @@ module.exports = function(grunt) {
                 '../../../../web/assets/images/ic_youtube_24px.svg',
                 '../../../../web/assets/images/ic_linkedin_24px.svg',
                 '../../../../web/assets/images/ic_pabandymui_24px.svg',
+                '../../../../web/assets/images/ic_twitterr_24px.svg',
+                '../../../../web/assets/images/ic_linkedinn_24px.svg',
             ],
             dest: 'src/sprites',
             options: {

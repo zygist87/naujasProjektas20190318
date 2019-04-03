@@ -85,23 +85,26 @@
             }
         }
     }
-    // .icon-list{
-    //   .user-info__bottom{
-    //           margin-top: 40px;
-    //           margin-bottom: 40px;
-    //           .circle{
-    //             @include circle();
-    //             height: 40px;
-    //             width: 40px;
-    //             margin-right: $spacer;
-    //             background: gray;
-    //             .svg-icon{
-    //               background: grey;
-    //               fill: red;
-    //               padding: 6px;
-    //
-    //             }
-    //           }
-    //         }
-    // }
+    .icon-list{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      .user-info__bottom{
+              margin-top: 24px;
+              margin-bottom: 24px;
+              .svg-icon{
+                width: 24px;
+                height: 24px;
+                fill: white;
+                margin-left: 20px;
+                margin-right: 20px;
+              }
+            }
+    }
+    .user-info__dog{
+      text-align: right;
+      img{
+
+      }
+    }
 }
