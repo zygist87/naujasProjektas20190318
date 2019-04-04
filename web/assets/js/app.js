@@ -40,6 +40,15 @@ $(function() {
 
 
 });
+// efektas kai paspaudus ant HOME letai pasikelia i virsu puslapis
+$("#mygt1").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#apac1").offset().top - 102
+  }, 1000);
+});
+// auksciau parasytas kodas veikia
+
+$("#test div").addClass("load");
 
 // nuo cia mygtukas contacts veikiantis
 $("#mygtukass").click(function() {
@@ -53,5 +62,14 @@ $(document).ready(function(){
   $("#callTo").click(function(){
     alert("Are you sure you want to call?");
   });
+  // $('.nav-link').on('click', function(){
+  //   $(this).siblings('.nav-link').removeClass('active');
+  //   $(this).addClass('active');
+  // });
 });
 // cia pabaiga call mygtuko
+// nuo cia bandau padaryti veikiancius mygtukus navbar
+// $('labas').on('click', function(){
+//     $('labas').removeClass('selected');
+//     $(this).addClass('selected');
+// });

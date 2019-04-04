@@ -51,18 +51,16 @@
             &__link{
                 display: inline-block;
                 text-align: center;
-                .active{
-                  color: red;
-                }
-
 
             }
+
             &--svg-icon{
               background: $navbar-bg;
                 width: 24px;
                 height: 24px;
                 fill: $bg-blue;
                 margin-right: 10px;
+
             }
             &--svg-iconhome{
                 margin-right: 40px;
@@ -116,14 +114,13 @@
         // }
     }
 }
-// .nav{
-//     .nav-item{
-//       .nav-link{
-//         &.active{
-//           color: green;
-//           border-bottom: 2px solid red;
-//           height: $navbar-height;
-//         }
-//       }
-//     }
-// }
+.nav{
+    .nav-item{
+      &.active{
+        .nav-link{
+          color: red;
+        }
+      }
+
+    }
+}
