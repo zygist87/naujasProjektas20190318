@@ -1,9 +1,105 @@
-.row{
-  // border-top: 1px solid $mid-gray;
-  // border-right: 1px solid $mid-gray;
-  // border-bottom: 1px solid $mid-gray;
-  .blog-image{
-    width: 100%;
-    height: 540px;
+.container{
+  h1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+  .blog{
+    padding: 0;
+    .blog-section{
+      border: 1px solid $bg-border;
+      margin-bottom: 40px;
+      .image-section{
+        padding: 0;
+        .blog-image{
+          width: 500px;
+          height: 500px;
+      }
+      }
+      .content-section{
+        text-align: left;
+        padding-left: 40px;
+        .blog-date{
+          padding-top: 40px;
+          padding-bottom: 30px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          p{
+            width: 500px;
+          }
+          .blog-icon{
+            width: 19px;
+            height: 19px;
+            fill: black;
+          }
+        }
+        .blog-title{
+          text-align: left;
+        }
+        .blog-content{
+          padding-top: 30px;
+          padding-bottom: 60px;
+          border-bottom: 1px solid $bg-border;
+        }
+        .blog-more{
+          padding-top: 20px;
+          padding-bottom: 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          p{
+            width: 500px;
+          }
+          .blog-icon{
+            width: 19px;
+            height: 19px;
+            fill: red;
+          }
+        }
+      }
+    }
+    .blog-section-subscribe{
+      padding-bottom: 40px;
+      .subscribe-coll{
+        padding-left: 0;
+        border-bottom: 1px solid $bg-blue;
+      }
+      h2{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: left;
+      }
+      .blog-icon-mail{
+        width: 40px;
+        height: 20px;
+        fill: $mid-gray;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      input{
+        border: none;
+        width: 780px;
+        padding-bottom: 6px;
+
+      }
+      input:focus{
+        outline: none;
+      }
+      .subscribe-button{
+
+        a{
+          color: white;
+          text-decoration: none;
+          width: 120px;
+          height: 40px;
+          background: $bg-blue;
+          line-height: 40px;
+          padding: 10px 20px;
+        }
+
+      }
+    }
   }
 }
