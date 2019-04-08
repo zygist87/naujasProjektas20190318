@@ -41,14 +41,18 @@ $(function() {
 
 });
 // efektas kai paspaudus ant HOME letai pasikelia i virsu puslapis
-$("#mygt1").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#apac1").offset().top - 102
-  }, 1000);
-});
+// $("#mygt1").click(function() {
+//   $('html, body').animate({
+//       scrollTop: $("#apac1").offset().top - 102
+//   }, 1000);
+// });
 // auksciau parasytas kodas veikia
 
-$("#test div").addClass("load");
+// $("#test div").addClass("load");
+
+setTimeout(function() {
+    $("#test div").addClass("load");
+}, 1);
 
 // nuo cia mygtukas contacts veikiantis
 $("#mygtukass").click(function() {

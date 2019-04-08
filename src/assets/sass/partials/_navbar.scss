@@ -51,6 +51,11 @@
             &__link{
                 display: inline-block;
                 text-align: center;
+                &.active{
+                  .nav-link{
+                    color: red;
+                  }
+                }
 
             }
 
@@ -112,15 +117,5 @@
         //         }
         //     }
         // }
-    }
-}
-.nav{
-    .nav-item{
-      &.active{
-        .nav-link{
-          color: red;
-        }
-      }
-
     }
 }

@@ -2,10 +2,16 @@
       h1{
           padding-top: 60px;
           padding-bottom: 60px;
+          -webkit-animation: slide_up 1.4s ease;
+                  animation: slide_up 1.4s ease;
         }
         .content-with{
 
+
+
           .boxes--servicessection{
+            -webkit-animation: slide_up 2.1s ease;
+                    animation: slide_up 2.1s ease;
             .grooming{
               display: -webkit-box;
               display: -ms-flexbox;
@@ -17,6 +23,21 @@
                 width: 193px;
                 height: 193px;
                 border-radius: 50%;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                -webkit-transition-duration: 500ms;
+                        transition-duration: 500ms;
+                -webkit-transition-property: -webkit-transform;
+                transition-property: -webkit-transform;
+                transition-property: transform;
+                transition-property: transform, -webkit-transform;
+                -webkit-transition-timing-function: ease-in-out;
+                        transition-timing-function: ease-in-out;
+
+                        -webkit-transform: scaleY(1);
+                                transform: scaleY(1);
+                         -webkit-transform-origin: top;
+                                 transform-origin: top;
 
               }
 
@@ -36,6 +57,7 @@
               }
               .boxes__info{
                 display: none;
+
               }
               .learn-more{
                 border-bottom: 1px solid $bg-blue;
@@ -49,8 +71,47 @@
                 line-height: 40px;
                 background: $bg-blue;
                 color: white;
+
               }
             }
           }
         }
+}
+#expand-info:hover{
+
+.boxes__info{
+  display: block;
+}
+ .learn-more{
+   display: block;
+   text-decoration: none;
+ }
+ .boxes__image--gromming{
+   -webkit-transform: scaleY(0);
+           transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+ }
+}
+
+
+@-webkit-keyframes slide_up{
+  0%{
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide_up{
+  0%{
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
