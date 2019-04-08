@@ -97,25 +97,13 @@
             }
 
         }
-        // .dropdown-menu{
-        //     &__item{
-        //         display: flex;
-        //         padding: 10px 20px;
-        //         align-items: center;
-        //         .circle{
-        //             @include circle($width: 40px, $height: 40px)
-        //         }
-        //         &__title{
-        //             margin-left: 10px;
-        //             h5{
-        //                 color: $text-color;
-        //             }
-        //             p{
-        //                 color: $mid-gray;
-        //
-        //             }
-        //         }
-        //     }
-        // }
     }
+}
+@media screen and (max-width: 1060px) {
+  .topbar{
+
+    .nav-link{
+      display: none;
+    }
+  }
 }
