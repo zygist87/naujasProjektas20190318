@@ -1,0 +1,49 @@
+---
+layout: menu.hbs
+---
+<div class="container-fluid menu">
+    <div class="row exit-section">
+        <div class="col-12">
+          <a class="" href="../web/dashboard.html">
+              <svg class="exit-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#exit"></use>
+              </svg>
+          </a>
+        </div>
+    </div>
+    <div class="row links-section">
+        <div class="col-12">
+          <ul class="small-menu">
+              <li class="menu-item {{#is basename 'dashboard'}}active{{/is}}">
+                  <a class="nav-link active" href="../web/dashboard.html">
+                      Home
+                   </a>
+              </li>
+              <!--nuo cia aboutn antras mygtukas -->
+              <li class="menu-item {{#is basename 'aboutme'}}active{{/is}}">
+                  <a class="nav-link" href="../web/aboutme.html">
+                      About
+                  </a>
+              </li>
+              <!--nuo cia Services trecias mygtukas -->
+              <li class="menu-item {{#is basename 'services'}}active{{/is}}">
+                  <a class="nav-link" href="../web/services.html">
+                      Services
+                  </a>
+              </li>
+              <!--nuo cia Blog ketrvirtas mygtukas -->
+              <li class="menu-item {{#is basename 'blog'}}active{{/is}}">
+                  <a class="nav-link" href="../web/blog.html">
+                      Blog
+                  </a>
+              </li>
+              <!--nuo cia Contact penktas mygtukas -->
+              <li class="menu-item {{#is basename 'contacts'}}active{{/is}}">
+                  <a class="nav-link" href="#" id="mygtukass">
+                      Contact
+                  </a>
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>

@@ -77,3 +77,5 @@ $(document).ready(function(){
 //     $('labas').removeClass('selected');
 //     $(this).addClass('selected');
 // });
+
+// nuo cia bandau padaryti menu mygtuka, viska kas zemiau pats darau
