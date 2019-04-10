@@ -24,6 +24,7 @@ html, body{
             .small-menu{
 
               .menu-item{
+
                 &.active{
                   .nav-link{
                     color: red;
@@ -33,8 +34,13 @@ html, body{
                   color: white;
                   font-size: 36px;
                 }
+                .nav-link:hover{
+                  color: red;
+                }
               }
+
             }
+
   }
 }
 .svg-sprite-container{

@@ -238,8 +238,181 @@
 #test div.load {
     opacity: 1;
 }
-@media screen and (max-width: 768px) {
-  .contact-section{
-    background: red;
+
+
+// @media screen and (max-width: 1060px) {
+//
+// }
+
+@media screen and (max-width: 576px) {
+  .section-container{
+
+      margin-top: $navbar-height;
+      background: white;
+      color: $bg-blue;
+      }
+  .container-fluid{
+
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    h2{
+      color: $bg-blue;
+      width: 100%;
+      height: 73px;
+    }
+    .pet-care{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      position: relative;
+      height: auto;
+      text-align: center;
+      background: $navbar-bg;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+              h1{
+                font-size: 130px;
+                font-weight: bold;
+                text-align: center;
+                padding-left: 0;
+              }
+              p{
+                font-size: 26px;
+                text-align: center;
+                padding-left: 0;
+              }
+              a{
+                // padding-left: 0;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                text-align: center;
+                span{
+                  padding: 10px 20px;
+                  width: 100%;
+                  height: 40px;
+                  background: $bg-blue;
+                  color: white;
+                  -webkit-transition: color 0.4s;
+                  -webkit-transition: color 0.4s ease 0s;
+                  transition: color 0.4s ease 0s;
+                }
+              }
+              .pet-img{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                padding-top: 40px;
+                padding-bottom: 40px;
+              }
+    }
+    .about-me{
+      padding-top: 96px;
+      padding-bottom: 80px;
+      padding-right: 0;
+      position: relative;
+      height: auto;
+      text-align: right;
+      background: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+              h1{
+                padding-bottom: 60px;
+                font-size: 100px;
+                font-weight: bold;
+                text-align: left;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+              p{
+                padding-bottom: 80px;
+                font-size: 20px;
+                text-align: left;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+              a{
+                padding-left: 10px;
+                -webkit-box-align: left;
+                    -ms-flex-align: left;
+                        align-items: left;
+                -webkit-box-pack: left;
+                    -ms-flex-pack: left;
+                        justify-content: left;
+                text-align: left;
+                span{
+                  padding: 10px 20px;
+                  width: auto;
+                  height: 40px;
+                  background: $bg-blue;
+                  color: white;
+                  -webkit-transition: color 0.4s;
+                  -webkit-transition: color 0.4s ease 0s;
+                  transition: color 0.4s ease 0s;
+                }
+              }
+            }
+        .content-with{
+          // padding-left: 55px;
+          // padding-right: 40px;
+        }
+
+        .boxes{
+                .circle{
+                    @include circle();
+                }
+                  &__image{
+                      width: 80px;
+                      height: 80px;
+                      border-radius: 50%;
+                      -o-object-fit: cover;
+                         object-fit: cover;
+                      margin-right: 20px;
+                      &--petcare{
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: 479px;
+                        height: 478px;
+                        border-radius: 50%;
+                      }
+                      &--aboutme{
+                        width: 479px;
+                        height: 478px;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        margin-left: 0;
+                      }
+                  }
+            }
+    h2{
+      padding-top: 40px;
+      padding-bottom: 140px;
+      color: $bg-blue;
+      font-size: 40px;
+    }
   }
 }
