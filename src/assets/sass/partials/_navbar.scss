@@ -138,3 +138,25 @@
     }
   }
 }
+@media screen and (max-width: 400px) {
+  .topbar{
+    .topbar-row{
+      .topbar-main{
+        .topbar-list{
+          .topbar-list__link__call-btn{
+            width: 100%;
+            margin-right: 24px;
+            margin-left: 10px;
+
+          }
+        }
+      }
+      .topbar-menu{
+        padding-right: 0;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+    }
+  }
+}
